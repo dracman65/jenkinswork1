@@ -1,2 +1,2 @@
-This is a sample Jenkis file for testing private repo.
+This is a sample Jenkis file for testing the repo.
 This is only a test.
