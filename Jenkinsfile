@@ -11,23 +11,30 @@ pipeline {
         }        
     }
     stages{
+        stage('PowerShell Set Execution'){
+            steps{
+                ps label: '', pwsh Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+            }
+        }        
+    }
+    stages{
         stage('Terraform init'){
             steps{
-                ps label: '', pwsh 'terraform init'
+                ps label: '', pwsh terraform init
             }
         }        
     }
     stages{
         stage('Terraform validate'){
             steps{
-                ps label: '', pwsh 'terraform init'
+                ps label: '', pwsh terraform init
             }
         }        
     }
     stages{
         stage('Terraform apply'){
             steps{
-                ps label: '', pwsh 'terraform apply --auto-approve'
+                ps label: '', pwsh terraform apply --auto-approve
             }
         }        
     }
