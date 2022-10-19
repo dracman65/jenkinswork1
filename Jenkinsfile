@@ -13,21 +13,21 @@ pipeline {
     stages{
         stage('Terraform init'){
             steps{
-                sh label: '', script: 'terraform init'
+                ps label: '', pwsh 'terraform init'
             }
         }        
     }
     stages{
         stage('Terraform validate'){
             steps{
-                sh label: '', script: 'terraform validate'
+                ps label: '', pwsh 'terraform init'
             }
         }        
     }
     stages{
         stage('Terraform apply'){
             steps{
-                sh label: '', script: 'terraform apply --auto-approve'
+                ps label: '', pwsh 'terraform apply --auto-approve'
             }
         }        
     }
