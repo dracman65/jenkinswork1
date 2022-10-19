@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage('Git Checkout'){
             steps{
-                git branch: 'refs/heads/main', credentialsId: 'b5e69f53-4333-4adb-802f-966c8947dd3d', url: 'https://github.com/dracman65/jenkinswork1.git'
+                git branch: 'refs/heads/main', credentialsId: 'add_cred_id', url: 'https://github.com/dracman65/jenkinswork1.git'
             }
         }        
     }
