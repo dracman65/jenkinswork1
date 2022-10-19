@@ -4,7 +4,7 @@
 
 variable "azurerm_resource_group" {
   description = "The name of the resource group in which the resources will be created"
-  default     = "TF-CA-DD-2"
+  default     = "TF-CA-DM-2"
 }
 
 variable "location" {

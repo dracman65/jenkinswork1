@@ -7,8 +7,8 @@ terraform {
 provider "azurerm" {
   # Subscription ID - Optional
   # version         = ">=2.97.0"
-  subscription_id = "5e2e06fc-9b86-4a65-a1fa-b11d522ee3ac"
-  tenant_id       = "f32b97f0-efb8-4bc3-91ee-18a6e5f635c9"
+  # subscription_id = "add_sub_id"
+  # tenant_id       = "add_tenant_id"
 
   # Terraform Features Block Page - https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/features-block
 
@@ -26,6 +26,6 @@ resource "azurerm_resource_group" "rg" {
   location = "eastus2"
   tags = {
     source = "terraform"
-    name   = "david.dracoules"
+    name   = "Herman Munster"
   }
 }
